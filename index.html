@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+
+		<style type="text/css">
+			*{
+				text-decoration: none !important;
+				box-sizing: border-box;
+			}
+
+			img {
+				width: 100%;
+			}
+			a {
+				color: darkslategray;
+			}
+			#para {
+				font-size: 1.2rem;
+			}
+
+			.navbar_top {
+				background-color: lightgray;
+				align-items: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid p-4 border border-info">
+
+			<div class="row navbar_top">
+
+				<div class="col-md-6 d-flex gap-4">
+					<p id="para"><strong>THEPublishers</strong></p>
+					<a href="">Home</a>
+					<a href="">About Us</a>
+				</div>
+
+
+
+
+				<div class="col-md-6 text-end">
+					<button type="button" class="btn btn-dark" onclick="
+						document.getElementById('banner_text').style ='background-color:white; color:black';
+					">Night Mode</button>
+
+					<button type="button" class="btn btn-warning" onclick="
+						document.getElementById('banner_text').style ='background-color:black; color:white';
+						document.getElementById('buy_text').style ='color:blue';
+					">Day Mode</button>
+				</div>
+			</div>
+
+
+
+			<div class="row p-5" id="banner_text">
+
+				<div class="col-md-4 d-flex justify-content-center">
+					<img src="robo.png" style="width: 250px;">
+				</div>
+
+				<div class="col-md-8">
+					<h1> Online Book Publishing</h1>
+					<h4>We bring your published book to your doorstep</h4>
+					<span>Publishing is the activity of making information, literature,music,software and other contents available to the public for sale or for free. Traditionally, the term refers to the creation and distribution of printed works, such as book</span>
+					<br>
+					<hr>
+					<span>Publishing is the activity of making information, literature,music,software and other contents available to the public for sale or for free. Traditionally, the term refers to the creation and distribution of printed works, such as book</span>
+					<br>
+
+					<button class="btn border-primary" id="buy_text">Buy Now</button>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
